@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Страница не найдена — AnnaSun</title>
+  <meta name="description" content="Страница не найдена. Вернитесь на главную страницу AnnaSun — магазина натурального мыла ручной работы.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="logo">
+          <svg><use href="assets/svg/sprite.svg#icon-logo"/></svg>
+          AnnaSun
+        </a>
+        <nav id="main-nav">
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="about.html">О компании</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+            <li><a href="reviews.html">Отзывы</a></li>
+            <li><a href="delivery.html">Оплата и доставка</a></li>
+            <li><a href="delivery.html">Оплата и доставка</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <button class="cart-btn" onclick="window.location.href='cart.html'">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" style="vertical-align: middle;">
+              <path d="M7 18C5.9 18 5 18.9 5 20S5.9 22 7 22 9 21.1 9 20 8.1 18 7 18ZM1 2V4H3L5.6 11.2L4.25 13.5C4.09 13.78 4 14.08 4 14.4C4 15.5 4.9 16.4 6 16.4H18V14.4H6.42C6.28 14.4 6.17 14.29 6.17 14.15L6.2 14.03L6.9 12.4H17.62L20.58 6.09C20.66 5.95 20.78 5.84 20.9 5.76C21.45 5.39 21.9 4.87 22 4.26C22.05 4.04 22 3.81 21.9 3.61L21.6 3H5.21L4.27 2H1ZM17 18C15.9 18 15 18.9 15 20S15.9 22 17 22 19 21.1 19 20 18.1 18 17 18Z" fill="currentColor"/>
+            </svg>
+            <span class="cart-count" id="cart-count">0</span>
+          </button>
+          <button class="mobile-menu-btn" onclick="toggleMenu()">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" style="vertical-align: middle;">
+              <path d="M3 18H21V16H3V18ZM3 13H21V11H3V13ZM3 6V8H21V6H3Z" fill="currentColor"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section style="padding: 120px 0; text-align: center;">
+    <div class="container">
+      <div style="font-size: 6rem; color: var(--color-primary-light); margin-bottom: 20px; font-weight: 700;">404</div>
+      <h1 style="font-size: 2rem; color: var(--color-primary-dark); margin-bottom: 20px;">Страница не найдена</h1>
+      <p style="font-size: 1.1rem; color: var(--color-text-light); max-width: 500px; margin: 0 auto 30px;">
+        Кажется, вы забрели не туда. Но не переживайте — мы поможем найти ваш путь обратно к натуральному мылу.
+      </p>
+      <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+        <a href="index.html" class="btn btn-primary">На главную</a>
+        <a href="catalog.html" class="btn btn-outline">В каталог</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-col">
+          <h4>AnnaSun</h4>
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="about.html">О компании</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Покупателям</h4>
+          <ul>
+            <li><a href="reviews.html">Отзывы</a></li>
+            <li><a href="cart.html">Корзина</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Контакты</h4>
+          <ul>
+            <li>Москва, Россия</li>
+            <li><a href="tel:+74951234567">+7 (495) 123-45-67</a></li>
+            <li><a href="mailto:hello@annasun.ru">hello@annasun.ru</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        &copy; 2024 AnnaSun. Натуральное мыло ручной работы. Москва, Россия.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

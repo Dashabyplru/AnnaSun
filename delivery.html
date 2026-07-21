@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Оплата и доставка — AnnaSun | Натуральное мыло ручной работы</title>
+  <meta name="description" content="Оплата и доставка натурального мыла ручной работы AnnaSun в Москве и по всей России. Способы оплаты, курьер, почта, самовывоз.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="logo">
+          <svg><use href="assets/svg/sprite.svg#icon-logo"/></svg>
+          AnnaSun
+        </a>
+        <nav id="main-nav">
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="about.html">О компании</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+            <li><a href="reviews.html">Отзывы</a></li>
+            <li><a href="delivery.html" class="active">Оплата и доставка</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <button class="cart-btn" onclick="window.location.href='cart.html'">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" style="vertical-align: middle;">
+              <path d="M7 18C5.9 18 5 18.9 5 20S5.9 22 7 22 9 21.1 9 20 8.1 18 7 18ZM1 2V4H3L5.6 11.2L4.25 13.5C4.09 13.78 4 14.08 4 14.4C4 15.5 4.9 16.4 6 16.4H18V14.4H6.42C6.28 14.4 6.17 14.29 6.17 14.15L6.2 14.03L6.9 12.4H17.62L20.58 6.09C20.66 5.95 20.78 5.84 20.9 5.76C21.45 5.39 21.9 4.87 22 4.26C22.05 4.04 22 3.81 21.9 3.61L21.6 3H5.21L4.27 2H1ZM17 18C15.9 18 15 18.9 15 20S15.9 22 17 22 19 21.1 19 20 18.1 18 17 18Z" fill="currentColor"/>
+            </svg>
+            <span class="cart-count" id="cart-count">0</span>
+          </button>
+          <button class="mobile-menu-btn" onclick="toggleMenu()">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" style="vertical-align: middle;">
+              <path d="M3 18H21V16H3V18ZM3 13H21V11H3V13ZM3 6V8H21V6H3Z" fill="currentColor"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="breadcrumbs">
+        <a href="index.html">Главная</a>
+        <span>/</span>
+        <span>Оплата и доставка</span>
+      </div>
+      <h1 class="section-title" style="text-align: left; margin-bottom: 20px;">Оплата и доставка</h1>
+      
+      <div style="margin-bottom: 50px;">
+        <h2 style="color: var(--color-primary-dark); margin-bottom: 20px; font-size: 1.6rem;">Способы оплаты</h2>
+        <div class="payment-methods">
+          <div class="payment-card">
+            <svg><use href="assets/svg/sprite.svg#icon-payment"/></svg>
+            <h3>Наличные</h3>
+            <p>Оплата наличными при получении заказа курьеру или в пункте выдачи.</p>
+          </div>
+          <div class="payment-card">
+            <svg><use href="assets/svg/sprite.svg#icon-payment"/></svg>
+            <h3>Банковская карта</h3>
+            <p>Оплата картой Visa, Mastercard, МИР при получении или онлайн на сайте.</p>
+          </div>
+          <div class="payment-card">
+            <svg><use href="assets/svg/sprite.svg#icon-payment"/></svg>
+            <h3>Онлайн-оплата</h3>
+            <p>Безопасная оплата через СберБанк Онлайн, Тинькофф, Яндекс.Деньги.</p>
+          </div>
+          <div class="payment-card">
+            <svg><use href="assets/svg/sprite.svg#icon-payment"/></svg>
+            <h3>Рассрочка</h3>
+            <p>Возможна рассрочка на 2-3 месяца для заказов от 2000 рублей.</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-bottom: 40px; background: var(--color-white); padding: 30px; border-radius: var(--radius); box-shadow: var(--shadow-sm);">
+        <h2 style="color: var(--color-primary-dark); margin-bottom: 15px;">Безопасность платежей</h2>
+        <p style="color: var(--color-text-light); line-height: 1.8;">Все платежи защищены SSL-шифрованием. Мы не храним данные ваших карт на серверах. Оплата происходит через защищённые платёжные шлюзы банков. Ваши данные в безопасности.</p>
+      </div>
+
+      <div>
+        <h2 style="color: var(--color-primary-dark); margin-bottom: 20px; font-size: 1.6rem;">Способы доставки</h2>
+        <div class="delivery-options">
+          <div class="delivery-card">
+            <h3>Курьер по Москве</h3>
+            <p><strong>Срок:</strong> 1-2 рабочих дня</p>
+            <p><strong>Стоимость:</strong> 300 рублей</p>
+            <p>Бесплатно при заказе от 3000 рублей. Курьер доставит заказ прямо к вашей двери. Время доставки обсуждается индивидуально.</p>
+          </div>
+          <div class="delivery-card">
+            <h3>Почта России</h3>
+            <p><strong>Срок:</strong> 5-14 дней</p>
+            <p><strong>Стоимость:</strong> от 350 рублей</p>
+            <p>Доставка по всей России. Отслеживание номера отправления. Упаковка с защитой от повреждений.</p>
+          </div>
+          <div class="delivery-card">
+            <h3>СДЭК / Boxberry</h3>
+            <p><strong>Срок:</strong> 2-5 дней</p>
+            <p><strong>Стоимость:</strong> от 400 рублей</p>
+            <p>Быстрая доставка по всей России до пункта выдачи или курьером. Удобный отслеживание онлайн.</p>
+          </div>
+          <div class="delivery-card">
+            <h3>Самовывоз</h3>
+            <p><strong>Срок:</strong> В день заказа</p>
+            <p><strong>Стоимость:</strong> Бесплатно</p>
+            <p>Заберите заказ самостоятельно из нашего ателье в Москве, м. Арбатская. Работаем ежедневно с 10:00 до 20:00.</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: 40px; background: var(--color-white); padding: 30px; border-radius: var(--radius); box-shadow: var(--shadow-sm);">
+        <h2 style="color: var(--color-primary-dark); margin-bottom: 15px;">Важно знать</h2>
+        <ul style="color: var(--color-text-light); line-height: 2; padding-left: 20px;">
+          <li>Мы тщательно упаковываем каждое мыло, чтобы оно добралось до вас в целости.</li>
+          <li>При повреждении упаковки просим сразу сообщить нам — мы заменим товар или вернём деньги.</li>
+          <li>Мыло — это не боярышник, поэтому при перепадах температур в пути оно может немного потемнеть. Это не влияет на качество и свойства.</li>
+          <li>Для регионов с жарким климатом рекомендуем выбрать доставку с учётом дополнительной упаковки.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-col">
+          <h4>AnnaSun</h4>
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="about.html">О компании</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Покупателям</h4>
+          <ul>
+            <li><a href="reviews.html">Отзывы</a></li>
+            <li><a href="cart.html">Корзина</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Контакты</h4>
+          <ul>
+            <li>Москва, Россия</li>
+            <li><a href="tel:+74951234567">+7 (495) 123-45-67</a></li>
+            <li><a href="mailto:hello@annasun.ru">hello@annasun.ru</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        &copy; 2024 AnnaSun. Натуральное мыло ручной работы. Москва, Россия.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
